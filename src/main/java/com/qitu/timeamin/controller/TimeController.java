@@ -40,4 +40,14 @@ public class TimeController {
         result.put("agsse", 35);
         return result;
     }
+
+    @RequestMapping(value = "/json2", produces="application/json;charset=UTF-8")
+    @ResponseBody
+    public Map<String, Object> jsonBody2() {
+        Map<String, Object> result = new HashMap<String, Object>();
+        result.put("name", "jsonBody");
+        result.put("asdfge", 35);
+        result.put("agsse", 35);
+        return result;
+    }
 }
